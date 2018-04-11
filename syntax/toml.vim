@@ -56,7 +56,7 @@ hi def link tomlTableArray Identifier
 syn keyword tomlTodo TODO FIXME XXX BUG contained
 hi def link tomlTodo Todo
 
-syn match tomlComment /#.*/ contains=@Spell,tomlTodo
+syn match tomlComment /\s*((#).*)$/ contains=@Spell,tomlTodo
 hi def link tomlComment Comment
 
 syn sync minlines=500
